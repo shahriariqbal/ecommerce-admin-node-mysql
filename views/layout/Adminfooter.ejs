@@ -1,0 +1,40 @@
+    <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+        <b>Version</b> 1.0.0
+        </div>
+        <strong>Copyright &copy; 2019-2020 <a href="http://one-ict.com">One ICT</a>.</strong> All rights
+        reserved.
+  </footer>
+</div>
+<!-- jQuery 2.2.3 -->
+<script src="<%=nodeSiteUrl%>/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="<%=nodeSiteUrl%>/bootstrap/js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="<%=nodeSiteUrl%>/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="<%=nodeSiteUrl%>/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+
+<!-- SlimScroll -->
+<script src="<%=nodeSiteUrl%>/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="<%=nodeSiteUrl%>/plugins/fastclick/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="<%=nodeSiteUrl%>/dist/js/app.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="<%=nodeSiteUrl%>/dist/js/demo.js"></script>
+<script>
+  $(function () {
+    $('#example1').dataTable();
+    $('#example2').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    });
+  })
+</script>
+
+</body>
+</html>
